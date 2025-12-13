@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
-RESULT_DIR = "result"
+RESULT_DIR = "timeseries_analysis/result"
 
 def evaluate_predictions(result_dir: str = RESULT_DIR, output_csv: str = None):
     csv_files = glob.glob(os.path.join(result_dir, "*.csv"))
